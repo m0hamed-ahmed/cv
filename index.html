@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Professional personal portfolio for a Flutter developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="nav">
+          <a class="brand" href="#top">Portfolio</a>
+          <div class="nav-links" id="navLinks"></div>
+          <div class="nav-actions">
+            <button class="language-toggle" id="languageToggle" type="button">AR</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow" id="heroEyebrow"></p>
+            <h1 id="heroTitle"></h1>
+            <p class="hero-subtitle" id="heroSubtitle"></p>
+            <div class="hero-actions hero-actions-top" id="heroActions"></div>
+            <p class="summary-label" id="summaryLabel">Summary</p>
+            <p class="hero-summary" id="heroSummary"></p>
+            <div class="hero-facts" id="heroFacts"></div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="profile-frame">
+              <img id="profileImage" alt="Profile portrait" />
+              <div class="profile-fallback" id="profileFallback"></div>
+            </div>
+            <div class="profile-stats" id="heroStats"></div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" id="backgroundSection"></section>
+
+        <section class="section" id="internshipSection"></section>
+
+        <section class="section" id="experience">
+          <div class="section-heading">
+            <div>
+              <h2 id="experienceTitle"></h2>
+            </div>
+          </div>
+          <div class="timeline" id="experienceList"></div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-heading">
+            <div>
+              <h2 id="aboutTitle"></h2>
+            </div>
+          </div>
+          <div class="tag-list" id="skillsList"></div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <div>
+              <h2 id="projectsTitle"></h2>
+            </div>
+          </div>
+          <div class="project-tabs" id="projectTabs"></div>
+          <div class="projects-grid" id="projectsList"></div>
+        </section>
+
+        <section class="section" id="languagesSection"></section>
+      </main>
+    </div>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Previous">‹</button>
+      <div class="lightbox-content">
+        <img id="lightboxImage" alt="Project screenshot preview" />
+      </div>
+      <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next">›</button>
+      <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
