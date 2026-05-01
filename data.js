@@ -5,10 +5,10 @@ window.PORTFOLIO_DATA = {
     en: {
       brand: "Portfolio",
       nav: {
-        skills: "Technical Skills",
-        experience: "Work Experience",
+        "technical-skills": "Technical Skills",
+        "work-experience": "Work Experience",
         projects: "Projects",
-        background: "Education",
+        education: "Education",
         internship: "Internship",
         languages: "Languages",
       },
@@ -22,8 +22,8 @@ window.PORTFOLIO_DATA = {
         switchToEnglish: "EN",
       },
       labels: {
-        android: "Android",
-        ios: "Apple",
+        android: "Google Play",
+        ios: "App Store",
         github: "GitHub",
         linkedin: "LinkedIn",
         video: "Video",
@@ -32,10 +32,10 @@ window.PORTFOLIO_DATA = {
     ar: {
       brand: "السيرة الذاتية",
       nav: {
-        skills: "المهارات التقنية",
-        experience: "الخبرات العملية",
+        "technical-skills": "المهارات التقنية",
+        "work-experience": "الخبرات العملية",
         projects: "المشاريع",
-        background: "التعليم",
+        education: "التعليم",
         internship: "التدريب",
         languages: "اللغات",
       },
@@ -50,7 +50,7 @@ window.PORTFOLIO_DATA = {
       },
       labels: {
         android: "أندرويد",
-        ios: "Apple",
+        ios: "آبل",
         github: "جيت هب",
         linkedin: "لينكدإن",
         video: "فيديو",
@@ -59,7 +59,7 @@ window.PORTFOLIO_DATA = {
   },
 
   personal: {
-    name: "Mohamed Ahmed Mohamed",
+    name: { en: "Mohamed Ahmed Mohamed", ar: "محمد احمد محمد" },
     role: {
       en: "Software Engineer (Flutter Developer)",
       ar: "مهندس برمجيات (مطور Flutter)",
@@ -73,8 +73,8 @@ window.PORTFOLIO_DATA = {
       ar: "شبرا الخيمة، القليوبية، مصر",
     },
     summary: {
-      en: "Software Engineer with a Computer Science degree and 3 years of experience building Android and iOS applications with Flutter. Focused on high-quality mobile products, clean architecture, real business needs, and continuous learning.",
-      ar: "مهندس برمجيات حاصل على بكالوريوس علوم الحاسب ولدي خبرة 3 سنوات في تطوير تطبيقات أندرويد وآيفون باستخدام Flutter، مع اهتمام كبير بجودة المنتج، البنية النظيفة، وتحويل احتياجات العمل إلى تطبيقات قوية وفعالة.",
+      en: "Software Engineer with a Computer Science degree and 4 years of experience building Android and iOS applications with Flutter. Focused on high-quality mobile products, clean architecture, real business needs, and continuous learning",
+      ar: "مهندس برمجيات حاصل على بكالوريوس علوم الحاسب ولدي خبرة 4 سنوات في تطوير تطبيقات أندرويد وآيفون باستخدام Flutter مع اهتمام كبير بجودة المنتج، البنية النظيفة، وتحويل احتياجات العمل إلى تطبيقات قوية وفعالة",
     },
     profileImage: "assets/images/profile/profile.jpeg",
     personalFacts: [
@@ -94,60 +94,57 @@ window.PORTFOLIO_DATA = {
         value: { en: "Married", ar: "متزوج" },
       },
     ],
-    stats: [
-      { value: "18+", label: { en: "Android Apps", ar: "تطبيقات أندرويد" } },
-      { value: "16+", label: { en: "iPhone Apps", ar: "تطبيقات آيفون" } },
-    ],
+    stats: [],
   },
 
   socialLinks: [
     {
       type: "email",
-      label: "Email",
+      label: { en: "Email", ar: "البريد الإلكتروني" },
       href: "mailto:mohamed.ahmed50050073@gmail.com",
     },
     {
       type: "phone",
-      label: "Phone",
+      label: { en: "Phone", ar: "الهاتف" },
       href: "tel:+201550112656",
     },
     {
       type: "whatsapp",
-      label: "WhatsApp",
+      label: { en: "WhatsApp", ar: "واتساب" },
       href: "https://wa.me/201550112656",
     },
     {
       type: "android",
-      label: "Google Play",
+      label: { en: "Google Play", ar: "متجر جوجل بلاي" },
       href: "https://play.google.com/store/apps/developer?id=M0hamed+Ahmed",
     },
     {
       type: "ios",
-      label: "App Store",
+      label: { en: "App Store", ar: "متجر ابل" },
       href: "https://apps.apple.com/us/developer/mohamed-ahmed/id1835281118",
     },
-    { type: "github", label: "GitHub", href: "https://github.com/m0hamed-ahmed" },
+    { type: "github", label: { en: "GitHub", ar: "جيت هب" }, href: "https://github.com/m0hamed-ahmed" },
     {
       type: "linkedin",
-      label: "LinkedIn",
+      label: { en: "LinkedIn", ar: "لينكدإن" },
       href: "https://www.linkedin.com/in/m0hamed-ahmed/",
     },
-    { type: "cv", label: "CV PDF", href: "https://drive.google.com/file/d/1abefkRhH_7qY_9L3QbjkFYTAnmi0zPLp/view?usp=sharing" },
+    { type: "cv", label: { en: "CV PDF", ar: "السيرة الذاتية" }, href: "https://drive.google.com/file/d/1abefkRhH_7qY_9L3QbjkFYTAnmi0zPLp/view?usp=sharing" },
   ],
 
   skills: [
     {
       title: { en: "Flutter Development", ar: "تطوير Flutter" },
       text: {
-        en: "3 years of experience in building cross-platform applications.",
-        ar: "خبرة 3 سنوات في بناء تطبيقات متعددة المنصات.",
+        en: "3 years of experience in building cross-platform applications",
+        ar: "خبرة 3 سنوات في بناء تطبيقات متعددة المنصات",
       },
     },
     {
       title: { en: "Java Development", ar: "تطوير Java" },
       text: {
-        en: "Less than a year of experience in Native Android and Desktop applications.",
-        ar: "أقل من سنة خبرة في تطبيقات أندرويد الأصلية وتطبيقات الديسكتوب.",
+        en: "Less than a year of experience in Native Android and Desktop applications",
+        ar: "أقل من سنة خبرة في تطبيقات أندرويد النيتف وتطبيقات الديسكتوب",
       },
     },
     {
@@ -156,92 +153,92 @@ window.PORTFOLIO_DATA = {
         ar: "البرمجة كائنية التوجه (OOP)",
       },
       text: {
-        en: "Familiar with design principles.",
-        ar: "إلمام جيد بمبادئ التصميم البرمجي.",
+        en: "Familiar with design principles",
+        ar: "إلمام جيد بمبادئ التصميم البرمجي",
       },
     },
     {
       title: { en: "Clean Architecture & MVVM", ar: "Clean Architecture وMVVM" },
       text: {
-        en: "Efficient in building scalable and maintainable apps.",
-        ar: "كفاءة في بناء تطبيقات قابلة للتوسع وسهلة الصيانة.",
+        en: "Efficient in building scalable and maintainable apps",
+        ar: "كفاءة في بناء تطبيقات قابلة للتوسع وسهلة الصيانة",
       },
     },
     {
       title: { en: "State Management", ar: "إدارة الحالة" },
       text: {
-        en: "Experience with Provider and Bloc (Cubit).",
-        ar: "خبرة في استخدام Provider وBloc (Cubit).",
+        en: "Experience with Provider and Bloc (Cubit)",
+        ar: "خبرة في استخدام Provider و Bloc (Cubit)",
       },
     },
     {
       title: { en: "Local Storage", ar: "التخزين المحلي" },
       text: {
-        en: "Experienced in using Shared Preferences and SQLite for data persistence.",
-        ar: "خبرة في استخدام Shared Preferences وSQLite لحفظ البيانات محليًا.",
+        en: "Experienced in using Shared Preferences and SQLite for data persistence",
+        ar: "خبرة في استخدام Shared Preferences و SQLite لحفظ البيانات محليًا",
       },
     },
     {
       title: { en: "RESTful APIs", ar: "واجهات RESTful APIs" },
       text: {
-        en: "Working with Dio and HTTP packages.",
-        ar: "التعامل مع حزم Dio وHTTP.",
+        en: "Working with Dio and HTTP packages",
+        ar: "التعامل مع حزم Dio وHTTP",
       },
     },
     {
       title: { en: "Firebase Services", ar: "خدمات Firebase" },
       text: {
-        en: "Authentication, Firestore, Storage, and Cloud Messaging (Push Notifications).",
-        ar: "Authentication وFirestore وStorage وCloud Messaging (الإشعارات).",
+        en: "Authentication, Firestore, Storage, and Cloud Messaging (Push Notifications)",
+        ar: "Authentication, Firestore, Storage, and Cloud Messaging (Push Notifications)",
       },
     },
     {
       title: { en: "Google Services", ar: "خدمات Google" },
       text: {
-        en: "Google Maps and Dynamic Links.",
-        ar: "Google Maps وDynamic Links.",
+        en: "Google Maps and Dynamic Links",
+        ar: "Google Maps و Dynamic Links",
       },
     },
     {
       title: { en: "Payment Integration", ar: "ربط بوابات الدفع" },
       text: {
-        en: "Experience with various payment gateways.",
-        ar: "خبرة في التعامل مع بوابات دفع متنوعة.",
+        en: "Experience with various payment gateways",
+        ar: "خبرة في التعامل مع بوابات دفع متنوعة",
       },
     },
     {
       title: { en: "App Monetization", ar: "الربح من التطبيقات" },
       text: {
-        en: "Implementing AdMob for revenue generation.",
-        ar: "تطبيق AdMob لتحقيق دخل من التطبيقات.",
+        en: "Implementing AdMob for revenue generation",
+        ar: "تطبيق ادموب لتحقيق دخل من التطبيقات",
       },
     },
     {
       title: { en: "Crash Monitoring", ar: "متابعة الأعطال" },
       text: {
-        en: "Firebase Crashlytics for error tracking.",
-        ar: "استخدام Firebase Crashlytics لتتبع الأخطاء.",
+        en: "Firebase Crashlytics for error tracking",
+        ar: "استخدام Firebase Crashlytics لتتبع الأخطاء",
       },
     },
     {
       title: { en: "Version Control", ar: "إدارة الإصدارات" },
       text: {
-        en: "Proficient with Git and GitHub.",
-        ar: "إجادة العمل باستخدام Git وGitHub.",
+        en: "Proficient with Git and GitHub",
+        ar: "إجادة العمل باستخدام Git و GitHub",
       },
     },
     {
       title: { en: "Deployment & Publishing", ar: "النشر والإطلاق" },
       text: {
-        en: "Published 15+ apps on the Play Store.",
-        ar: "نشر أكثر من 15 تطبيقًا على Google Play.",
+        en: "Published many apps on Google Play and App Store",
+        ar: "نشرت تطبيقات كثيرة على جوجل بلاي وأبل ستور",
       },
     },
     {
       title: { en: "Postman", ar: "Postman" },
       text: {
-        en: "Ability to work with Postman software.",
-        ar: "القدرة على العمل باستخدام برنامج Postman.",
+        en: "Ability to work with Postman",
+        ar: "القدرة على العمل باستخدام Postman",
       },
     },
     {
@@ -250,15 +247,15 @@ window.PORTFOLIO_DATA = {
         ar: "فهم متطلبات العمل",
       },
       text: {
-        en: "Ability to understand business requirements and translate them into technical requirements.",
-        ar: "القدرة على فهم متطلبات العمل وتحويلها إلى متطلبات تقنية واضحة.",
+        en: "Ability to understand business requirements and translate them into technical requirements",
+        ar: "القدرة على فهم متطلبات العمل وتحويلها إلى متطلبات تقنية واضحة",
       },
     },
     {
       title: { en: "Problem Solving", ar: "حل المشكلات" },
       text: {
-        en: "Search for solutions and solve problems.",
-        ar: "البحث عن الحلول والتعامل مع المشكلات بفعالية.",
+        en: "Search for solutions and solve problems",
+        ar: "البحث عن الحلول والتعامل مع المشكلات بفعالية",
       },
     },
   ],
@@ -268,21 +265,21 @@ window.PORTFOLIO_DATA = {
       company: "Sigma Tech Company",
       role: {
         en: "Flutter Developer",
-        ar: "Flutter Developer",
+        ar: "مطور Flutter",
       },
       companyLine: {
         en: "Sigma Tech Company (Remotly) Kuwait",
-        ar: "Sigma Tech Company (Remotly) Kuwait",
+        ar: "شركة سيجما تك عن بُعد - الكويت",
       },
       period: { en: "April 2023 - now", ar: "أبريل 2023 - حتى الآن" },
       logo: "assets/images/experience/sigma-tech.png",
       description: {
-        en: "Development, contribution to multiple projects, collaboration with a team, and working with GitHub.",
-        ar: "التطوير والمساهمة في عدة مشاريع والتعاون مع فريق والعمل باستخدام GitHub.",
+        en: "Development, contribution to multiple projects, collaboration with a team, and working with GitHub",
+        ar: "التطوير والمساهمة في عدة مشاريع والتعاون مع فريق والعمل باستخدام جيت هب",
       },
       links: [
         {
-          label: "Website",
+          label: { en: "Website", ar: "الموقع" },
           href: "https://sigmatech.com.kw/",
           type: "globe",
         },
@@ -290,53 +287,130 @@ window.PORTFOLIO_DATA = {
     },
     {
       company: "Freelance",
-      role: { en: "Freelancer", ar: "Freelancer" },
+      role: { en: "Freelancer", ar: "مستقل" },
       companyLine: { en: "Flutter", ar: "Flutter" },
       period: { en: "September 2021 - now", ar: "سبتمبر 2021 - حتى الآن" },
       logo: "",
       description: {
-        en: "Built multiple mobile applications using Flutter for real clients, with a focus on delivering practical products tailored to real business needs.",
-        ar: "تطوير عدة تطبيقات موبايل باستخدام Flutter لعملاء حقيقيين مع التركيز على تقديم منتجات عملية تناسب احتياجات العمل الفعلية.",
+        en: "Built multiple mobile applications using Flutter for real clients, with a focus on delivering practical products tailored to real business needs",
+        ar: "تطوير عدة تطبيقات موبايل باستخدام Flutter لعملاء حقيقيين مع التركيز على تقديم منتجات عملية تناسب احتياجات العمل الفعلية",
       },
     },
     {
       company: "March Part Company",
       role: {
         en: "Data Entry",
-        ar: "Data Entry",
+        ar: "مدخل بيانات",
       },
       companyLine: {
         en: "March Part Company 6th of October, Giza",
-        ar: "March Part Company 6th of October, Giza",
+        ar: "شركة مارش بارت - 6 أكتوبر، الجيزة",
       },
       period: { en: "September 2020 - December 2020", ar: "سبتمبر 2020 - ديسمبر 2020" },
       logo: "assets/images/experience/march-part.jpeg",
       description: {
-        en: "Developed a data loader desktop application with python to upload products in March Part site with one click.",
-        ar: "تطوير تطبيق ديسكتوب لتحميل البيانات باستخدام Python لرفع المنتجات على موقع March Part بضغطة واحدة.",
+        en: "Developed a data loader desktop application with python to upload products in March Part site with one click",
+        ar: "تطوير تطبيق ديسكتوب لتحميل البيانات باستخدام Python لرفع المنتجات على موقع مارش بارت بضغطة واحدة",
       },
     },
     {
       company: "Freelance",
-      role: { en: "Freelancer", ar: "Freelancer" },
+      role: { en: "Freelancer", ar: "مستقل" },
       companyLine: { en: "Java", ar: "Java" },
       period: { en: "April 2020 - December 2020", ar: "أبريل 2020 - ديسمبر 2020" },
       logo: "",
       description: {
-        en: "Created 4 simple mobile applications and 1 desktop application using Java.",
-        ar: "إنشاء 4 تطبيقات موبايل بسيطة وتطبيق ديسكتوب واحد باستخدام Java.",
+        en: "Created 4 simple mobile applications and 1 desktop application using Java",
+        ar: "إنشاء 4 تطبيقات موبايل بسيطة وتطبيق ديسكتوب واحد باستخدام Java",
       },
     },
   ],
 
   projects: [
     {
+      name: "Ghaith",
+      group: "sigma",
+      category: { en: "Water", ar: "مياه" },
+      description: {
+        en: "A water delivery app with flexible scheduling, subscription management, live tracking, and secure payments",
+        ar: "تطبيق لتوصيل المياه يوفّر جدولة مرنة وإدارة الاشتراكات وتتبع الطلبات والدفع الآمن",
+      },
+      logo: "assets/images/projects/ghaith/logo.jpg",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.app.ghaith",
+        ios: "https://apps.apple.com/us/app/%D8%BA%D9%8A%D8%AB-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/id6759941948",
+      },
+    },
+    {
+      name: "Mubarah",
+      group: "sigma",
+      category: { en: "Sports", ar: "رياضة" },
+      description: {
+        en: "A social sports app for organizing matches, joining teams, participating in events, and connecting with other players",
+        ar: "منصة اجتماعية رياضية لتنظيم المباريات وإنشاء الفرق والانضمام للفعاليات والتواصل مع اللاعبين",
+      },
+      logo: "assets/images/projects/mubarah/logo.jpg",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.app.mubarah",
+        ios: "https://apps.apple.com/us/app/%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9/id6753926670",
+      },
+    },
+    {
+      name: "White Silk",
+      group: "sigma",
+      category: { en: "Laundry", ar: "الغسيل" },
+      description: {
+        en: "A laundry service app for pickup, delivery, and order management with a convenient digital experience",
+        ar: "تطبيق لخدمات الغسيل يوفّر الاستلام والتوصيل وإدارة الطلبات ضمن تجربة رقمية مريحة",
+      },
+      logo: "assets/images/projects/white-silk/logo.png",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.q8intouch.whitesilk",
+        ios: "https://apps.apple.com/us/app/%D9%88%D8%A7%D9%8A%D8%AA-%D8%B3%D9%8A%D9%84%D9%83/id1534151117",
+      },
+    },
+    {
+      name: "4rents",
+      group: "sigma",
+      category: { en: "Rental", ar: "تأجير" },
+      description: {
+        en: "An app for managing and tracking real estate unit operations, viewing invoices, and paying rent easily",
+        ar: "تطبيق لإدارة وتتبع عمليات الوحدة العقارية، مع عرض الفواتير ومشاركتها وتسهيل دفع الإيجار بسهولة",
+      },
+      logo: "assets/images/projects/4rents/logo.png",
+      gallery: [],
+      links: {},
+      note: {
+        en: "Publishing is in progress; links will be added soon",
+        ar: "جاري الرفع، وسيتم إضافة الروابط قريبًا",
+      },
+    },
+    {
+      name: "Akle",
+      group: "sigma",
+      category: { en: "Nutrition Tracking", ar: "تتبع التغذية" },
+      description: {
+        en: "A nutrition app that analyzes meal photos, estimates calories and protein, tracks weekly weight, and lets users buy related products",
+        ar: "تطبيق تغذية يحلل صور الوجبات ويقدّر السعرات والبروتين، ويتابع الوزن أسبوعيًا، ويتيح شراء المنتجات المرتبطة بذلك",
+      },
+      logo: "assets/images/projects/akle/logo.png",
+      gallery: [],
+      links: {},
+      note: {
+        en: "Publishing is in progress; links will be added soon",
+        ar: "جاري الرفع، وسيتم إضافة الروابط قريبًا",
+      },
+    },
+    {
       name: "Having",
       group: "freelance",
-      category: { en: "Real Estate Platform", ar: "منصة عقارية" },
+      category: { en: "Real Estate", ar: "عقارات" },
       description: {
-        en: "A real estate platform that allows users to buy, sell, and rent properties.",
-        ar: "منصة عقارية متكاملة تتيح للمستخدمين شراء وبيع وتأجير العقارات.",
+        en: "A real estate platform that allows users to buy, sell, and rent properties",
+        ar: "منصة عقارية متكاملة تتيح للمستخدمين شراء وبيع وتأجير العقارات",
       },
       logo: "assets/images/projects/having/logo.jpg",
       gallery: [],
@@ -346,12 +420,27 @@ window.PORTFOLIO_DATA = {
       },
     },
     {
+      name: "Wazfnee",
+      group: "freelance",
+      category: { en: "Recruitment", ar: "توظيف" },
+      description: {
+        en: "A recruitment platform connecting employers and job seekers through direct communication",
+        ar: "منصة توظيف تربط بين أصحاب العمل والباحثين عن فرص عمل بشكل مباشر وفعال",
+      },
+      logo: "assets/images/projects/wazfnee/logo.jpg",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.app.wazfnee",
+        ios: "https://apps.apple.com/us/app/wazfnee/id6475053730",
+      },
+    },
+    {
       name: "Food In",
       group: "freelance",
       category: { en: "Food & Beverage", ar: "الأغذية والمشروبات" },
       description: {
-        en: "A platform connecting job seekers with companies and supporting recruitment and supply processes.",
-        ar: "منصة تربط بين الباحثين عن عمل والشركات وتدعم التوظيف وعمليات التوريد.",
+        en: "A platform connecting job seekers with companies and supporting recruitment and supply processes",
+        ar: "منصة تربط بين الباحثين عن عمل والشركات وتدعم التوظيف وعمليات التوريد",
       },
       logo: "assets/images/projects/food-in/logo.png",
       gallery: [],
@@ -365,8 +454,8 @@ window.PORTFOLIO_DATA = {
       group: "freelance",
       category: { en: "E-Commerce", ar: "تجارة إلكترونية" },
       description: {
-        en: "A connected commerce system for customer shopping, seller management, and delivery operations.",
-        ar: "نظام تجارة إلكترونية مترابط يشمل تجربة العميل وإدارة البائعين وعمليات التوصيل.",
+        en: "A connected commerce system for customer shopping, seller management, and delivery operations",
+        ar: "نظام تجارة إلكترونية مترابط يشمل تجربة العميل وإدارة البائعين وعمليات التوصيل",
       },
       logo: "assets/images/projects/kilo-mart/logo.png",
       gallery: [],
@@ -386,7 +475,7 @@ window.PORTFOLIO_DATA = {
           },
         },
         {
-          name: { en: "Delivery", ar: "التوصيل" },
+          name: { en: "Delivery", ar: "السائق" },
           links: {
             android: "https://play.google.com/store/apps/details?id=com.app.kilo_mart_delivery",
             ios: "https://apps.apple.com/us/app/kilo-mart-delivery/id6744123141",
@@ -396,42 +485,12 @@ window.PORTFOLIO_DATA = {
       links: {},
     },
     {
-      name: "Wazfnee",
-      group: "freelance",
-      category: { en: "Recruitment Platform", ar: "منصة توظيف" },
-      description: {
-        en: "A recruitment platform connecting employers and job seekers through direct communication.",
-        ar: "منصة توظيف تربط بين أصحاب العمل والباحثين عن فرص عمل بشكل مباشر وفعال.",
-      },
-      logo: "assets/images/projects/wazfnee/logo.jpg",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.app.wazfnee",
-        ios: "https://apps.apple.com/us/app/wazfnee/id6475053730",
-      },
-    },
-    {
-      name: "Excellence Road Institute",
-      group: "freelance",
-      category: { en: "EdTech", ar: "التعليم الإلكتروني" },
-      description: {
-        en: "A Saudi platform specializing in online education and training, offering courses, exam solving, question banks, and teacher-student interaction.",
-        ar: "منصة سعودية متخصصة في التعليم والتدريب الإلكتروني، توفر الدورات والاختبارات وبنك الأسئلة والتفاعل بين المعلم والطالب.",
-      },
-      logo: "assets/images/projects/excellence-road/logo.jpeg",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.app.excellence_road_institute",
-        ios: "https://apps.apple.com/us/app/%D9%85%D8%B9%D9%87%D8%AF-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2/id6741032849",
-      },
-    },
-    {
       name: "El Mister",
       group: "freelance",
-      category: { en: "Education Management", ar: "إدارة تعليمية" },
+      category: { en: "Education Management", ar: "إدارة التعليم" },
       description: {
-        en: "A complete educational platform covering teacher operations and student academic follow-up within one connected system.",
-        ar: "منصة تعليمية متكاملة تجمع بين إدارة المعلمين ومتابعة الطلاب الأكاديمية داخل نظام واحد مترابط.",
+        en: "A complete educational platform covering teacher operations and student academic follow-up within one connected system",
+        ar: "منصة تعليمية متكاملة تجمع بين إدارة المعلمين ومتابعة الطلاب الأكاديمية داخل نظام واحد مترابط",
       },
       logo: "assets/images/projects/el-mister/logo.png",
       gallery: [],
@@ -454,112 +513,12 @@ window.PORTFOLIO_DATA = {
       links: {},
     },
     {
-      name: "Bawabeti",
-      group: "freelance",
-      category: { en: "Client Platform", ar: "منصة خدمية" },
-      description: {
-        en: "A client-facing mobile app published on the App Store.",
-        ar: "تطبيق خدمي موجه للعملاء ومنشور على App Store.",
-      },
-      logo: "assets/images/projects/bawabeti/logo.jpeg",
-      gallery: [],
-      links: {
-        ios: "https://apps.apple.com/us/app/%D8%A8%D9%88%D8%A7%D8%A8%D8%AA%D9%8A/id6757091929",
-      },
-    },
-    {
-      name: "Wellaura",
-      group: "freelance",
-      category: { en: "Lifestyle App", ar: "تطبيق لايف ستايل" },
-      description: {
-        en: "A lifestyle mobile application published on the App Store.",
-        ar: "تطبيق لايف ستايل منشور على App Store.",
-      },
-      logo: "assets/images/projects/wellaura/logo.png",
-      gallery: [],
-      links: {
-        ios: "https://apps.apple.com/us/app/wellaura/id6755082827",
-      },
-    },
-    {
-      name: "Ghaith",
-      group: "sigma",
-      category: { en: "Service Platform", ar: "منصة خدمية" },
-      description: {
-        en: "A water delivery app with flexible scheduling, subscription management, live tracking, and secure payments.",
-        ar: "تطبيق لتوصيل المياه يوفّر جدولة مرنة وإدارة الاشتراكات وتتبع الطلبات والدفع الآمن.",
-      },
-      logo: "assets/images/projects/ghaith/logo.jpg",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.app.ghaith",
-        ios: "https://apps.apple.com/us/app/%D8%BA%D9%8A%D8%AB-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/id6759941948",
-      },
-    },
-    {
-      name: "Akle",
-      group: "sigma",
-      category: { en: "Food App", ar: "تطبيق طعام" },
-      description: {
-        en: "A nutrition app that analyzes meal photos, estimates calories and protein, tracks weekly weight, and lets users buy related products.",
-        ar: "تطبيق تغذية يحلل صور الوجبات ويقدّر السعرات والبروتين، ويتابع الوزن أسبوعيًا، ويتيح شراء المنتجات المرتبطة بذلك.",
-      },
-      logo: "assets/images/projects/akle/logo.png",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.app.akle",
-        ios: "https://apps.apple.com/us/app/akle/id6749232667",
-      },
-    },
-    {
-      name: "Mubarah",
-      group: "sigma",
-      category: { en: "Sports App", ar: "تطبيق رياضي" },
-      description: {
-        en: "A social sports app for organizing matches, joining teams, participating in events, and connecting with other players.",
-        ar: "منصة اجتماعية رياضية لتنظيم المباريات وإنشاء الفرق والانضمام للفعاليات والتواصل مع اللاعبين.",
-      },
-      logo: "assets/images/projects/mubarah/logo.jpg",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.app.mubarah",
-        ios: "https://apps.apple.com/us/app/%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9/id6753926670",
-      },
-    },
-    {
-      name: "White Silk",
-      group: "sigma",
-      category: { en: "Lifestyle Brand", ar: "علامة لايف ستايل" },
-      description: {
-        en: "A laundry service app for pickup, delivery, and order management with a convenient digital experience.",
-        ar: "تطبيق لخدمات الغسيل يوفّر الاستلام والتوصيل وإدارة الطلبات ضمن تجربة رقمية مريحة.",
-      },
-      logo: "assets/images/projects/white-silk/logo.png",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.q8intouch.whitesilk",
-        ios: "https://apps.apple.com/us/app/%D9%88%D8%A7%D9%8A%D8%AA-%D8%B3%D9%8A%D9%84%D9%83/id1534151117",
-      },
-    },
-    {
-      name: "4rents",
-      group: "sigma",
-      category: { en: "Rental Platform", ar: "منصة تأجير" },
-      description: {
-        en: "An app for managing and tracking real estate unit operations, viewing invoices, and paying rent easily.",
-        ar: "تطبيق لإدارة وتتبع عمليات الوحدة العقارية، مع عرض الفواتير ومشاركتها وتسهيل دفع الإيجار بسهولة.",
-      },
-      logo: "assets/images/projects/4rents/logo.png",
-      gallery: [],
-      links: {},
-    },
-    {
       name: "Ebhar",
       group: "freelance",
-      category: { en: "Child Assessment", ar: "تقييم مهارات الأطفال" },
+      category: { en: "E-Commerce & IQ Test", ar: "التجارة الإلكترونية واختبار الذكاء" },
       description: {
-        en: "An app for assessing children's skills and cognitive abilities, providing intelligence analytics, recommendations, and certified evaluation reports.",
-        ar: "تطبيق لتقييم مهارات الأطفال وقدراتهم المعرفية مع تحليلات دقيقة وتوصيات وتقارير تقييم معتمدة.",
+        en: "An app for assessing children's skills and cognitive abilities, providing intelligence analytics, recommendations, and certified evaluation reports",
+        ar: "تطبيق لتقييم مهارات الأطفال وقدراتهم المعرفية مع تحليلات دقيقة وتوصيات وتقارير تقييم معتمدة",
       },
       logo: "assets/images/projects/ebhar/logo.png",
       gallery: [],
@@ -570,14 +529,60 @@ window.PORTFOLIO_DATA = {
       },
     },
     {
+      name: "Excellence Road Institute",
+      group: "freelance",
+      category: { en: "Education", ar: "التعليم" },
+      description: {
+        en: "A Saudi platform specializing in online education and training, offering courses, exam solving, question banks, and teacher-student interaction",
+        ar: "منصة سعودية متخصصة في التعليم والتدريب الإلكتروني، توفر الدورات والاختبارات وبنك الأسئلة والتفاعل بين المعلم والطالب",
+      },
+      logo: "assets/images/projects/excellence-road/logo.jpeg",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.app.excellence_road_institute",
+        ios: "https://apps.apple.com/us/app/%D9%85%D8%B9%D9%87%D8%AF-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2/id6741032849",
+      },
+    },
+    {
+      name: "Wellaura",
+      group: "freelance",
+      category: { en: "Medical", ar: "طبي" },
+      description: {
+        en: "Provides fast and secure access to a wide range of healthcare services, including appointment booking, home services, and health awareness content",
+        ar: "يوفّر وصولًا سريعًا وآمنًا إلى مجموعة متنوعة من الخدمات الصحية والطبية، بما في ذلك حجز المواعيد، والخدمات المنزلية، والمحتوى التوعوي",
+      },
+      logo: "assets/images/projects/wellaura/logo.png",
+      gallery: [],
+      links: {},
+      note: {
+        en: "Publishing is in progress; links will be added soon",
+        ar: "جاري الرفع، وسيتم إضافة الروابط قريبًا",
+      },
+    },
+    {
+      name: "Bawabeti",
+      group: "freelance",
+      category: { en: "Education", ar: "التعليم" },
+      description: {
+        en: "A student-focused mobile application that helps users track their enrolled subjects, access lessons and educational content, receive notifications from instructors, and manage their study progress in a simple and organized way",
+        ar: "تطبيق مخصص للطلاب يساعدهم على متابعة المواد الدراسية المسجلين بها، والوصول إلى الدروس والمحتوى التعليمي، واستقبال إشعارات المدرس، وتنظيم تقدمهم الدراسي بطريقة سهلة ومنظمة",
+      },
+      logo: "assets/images/projects/bawabeti/logo.jpeg",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.app.bawabeti",
+        ios: "https://apps.apple.com/us/app/%D8%A8%D9%88%D8%A7%D8%A8%D8%AA%D9%8A/id6757091929",
+      },
+    },
+    {
       name: "Sevati",
       group: "freelance",
-      category: { en: "Social Platform", ar: "منصة اجتماعية" },
+      category: { en: "Social", ar: "التواصل الاجتماعي" },
       description: {
-        en: "A social application for posts, interactions, and instant messaging.",
-        ar: "تطبيق اجتماعي يتيح المنشورات والتفاعل عليها والمراسلة الفورية.",
+        en: "A social application for posts, interactions, and instant messaging",
+        ar: "تطبيق اجتماعي يتيح المنشورات والتفاعل عليها والمراسلة الفورية",
       },
-      logo: "",
+      logo: "assets/images/projects/sevati/logo.jpg",
       gallery: [],
       links: {
         android: "https://play.google.com/store/apps/details?id=com.app.sevati",
@@ -586,10 +591,10 @@ window.PORTFOLIO_DATA = {
     {
       name: "Fahem",
       group: "freelance",
-      category: { en: "Professional Services", ar: "خدمات مهنية" },
+      category: { en: "Legal Services", ar: "الخدمات القانونية" },
       description: {
-        en: "A service platform connecting users and business providers across legal, accounting, and public relations workflows.",
-        ar: "منصة خدمية تربط المستخدمين ومقدمي الخدمات في مجالات القانون والمحاسبة والعلاقات العامة داخل تجربة واحدة.",
+        en: "A service platform connecting users and business providers across legal, accounting, and public relations workflows",
+        ar: "منصة خدمية تربط المستخدمين ومقدمي الخدمات في مجالات القانون والمحاسبة والعلاقات العامة داخل تجربة واحدة",
       },
       logo: "assets/images/projects/fahem/logo.png",
       gallery: [],
@@ -610,10 +615,10 @@ window.PORTFOLIO_DATA = {
       group: "freelance",
       category: { en: "Transportation", ar: "النقل" },
       description: {
-        en: "A transportation platform built for both passengers and drivers with ride requests, tracking, and trip management.",
-        ar: "منصة نقل تخدم الركاب والسائقين مع إدارة الطلبات وتتبع الرحلات وتنظيم التشغيل.",
+        en: "A transportation platform built for both passengers and drivers with ride requests, tracking, and trip management",
+        ar: "منصة نقل تخدم الركاب والسائقين مع إدارة الطلبات وتتبع الرحلات وتنظيم التشغيل",
       },
-      logo: "",
+      logo: "assets/images/projects/sweft/logo.jpg",
       gallery: [],
       subApps: [
         {
@@ -623,61 +628,37 @@ window.PORTFOLIO_DATA = {
           },
         },
         {
-          name: { en: "Drivers", ar: "السائقين" },
-          links: {},
+          name: { en: "Drives", ar: "السائقين" },
+          links: {
+            android: "https://play.google.com/store/apps/details?id=com.app.eagle_drivers",
+          },
         },
       ],
       links: {},
     },
     {
-      name: "LoLo Video",
+      name: "LoLo",
       group: "freelance",
-      category: { en: "Transportation Platform", ar: "منصة نقل" },
+      category: { en: "Transportation", ar: "النقل" },
       description: {
-        en: "A transportation platform connecting users with private cars, scooters, and taxis, with tracking, sharing, and driver earnings management.",
-        ar: "منصة نقل تربط المستخدمين بالسيارات الخاصة والسكوترات والتاكسي مع التتبع والمشاركة وإدارة أرباح السائقين.",
+        en: "A transportation platform connecting users with private cars, scooters, and taxis, with tracking, sharing, and driver earnings management",
+        ar: "منصة نقل تربط المستخدمين بالسيارات الخاصة والسكوترات والتاكسي مع التتبع والمشاركة وإدارة أرباح السائقين",
       },
-      logo: "",
-      gallery: [],
-      links: {},
-    },
-    {
-      name: "Kids Games",
-      group: "personal",
-      category: { en: "Personal Project", ar: "مشروع شخصي" },
-      description: {
-        en: "A personal game project focused on fun and interactive child-friendly gameplay.",
-        ar: "مشروع ألعاب شخصي يركز على تجربة ممتعة وتفاعلية مناسبة للأطفال.",
-      },
-      logo: "",
+      logo: "assets/images/projects/lolo/logo.png",
       gallery: [],
       links: {
-        video: "https://drive.google.com/file/d/1n7JEuVuXyaIaaoe4lJfO8w3n342yyPu-/view",
-      },
-    },
-    {
-      name: "Write Words",
-      group: "educational",
-      category: { en: "Educational Project", ar: "مشروع تعليمي" },
-      description: {
-        en: "An educational project designed to support writing practice and learning activities.",
-        ar: "مشروع تعليمي لدعم التدريب على الكتابة والأنشطة التعليمية.",
-      },
-      logo: "",
-      gallery: [],
-      links: {
-        video: "https://drive.google.com/file/d/1GeeZhAPfM9y7Q7y-SFXOSrzLcr4r92D1/view",
+        video: "https://drive.google.com/file/d/147rYWUB7gSv9SiignrDX0DV-XKcBjAWm/view",
       },
     },
     {
       name: "Memory Test",
-      group: "personal",
-      category: { en: "Personal Project", ar: "مشروع شخصي" },
+      group: "learning",
+      category: { en: "Memory", ar: "ذاكرة" },
       description: {
-        en: "A memory challenge app that tests user focus and recall speed.",
-        ar: "تطبيق لاختبار الذاكرة والتركيز وسرعة التذكر.",
+        en: "A memory challenge app that tests user focus and recall speed",
+        ar: "تطبيق لاختبار الذاكرة والتركيز وسرعة التذكر",
       },
-      logo: "",
+      logo: "assets/images/projects/memory-test/logo.jpg",
       gallery: [],
       links: {
         android: "https://play.google.com/store/apps/details?id=com.test.youriq",
@@ -685,85 +666,14 @@ window.PORTFOLIO_DATA = {
       },
     },
     {
-      name: "IQ Test",
-      group: "personal",
-      category: { en: "Personal Project", ar: "مشروع شخصي" },
-      description: {
-        en: "A personal project centered around intelligence and test-based interaction.",
-        ar: "مشروع شخصي يركز على اختبارات الذكاء والتفاعل القائم على الأسئلة.",
-      },
-      logo: "",
-      gallery: [],
-      links: {
-        video: "https://drive.google.com/file/d/1MpT7w-vjx030ygbXvQ5-2ftLSsrLg0wr/view",
-      },
-    },
-    {
-      name: "XO with Friend",
-      group: "personal",
-      category: { en: "Personal Project", ar: "مشروع شخصي" },
-      description: {
-        en: "A multiplayer XO game that lets users play with friends online.",
-        ar: "لعبة XO متعددة اللاعبين تتيح للمستخدمين اللعب مع الأصدقاء عبر الإنترنت.",
-      },
-      logo: "",
-      gallery: [],
-      links: {
-        android: "https://play.google.com/store/apps/details?id=com.xo.online",
-        video: "https://drive.google.com/file/d/1ZFH34NsBBpFiu7XI_-NOXVOo3FuJlqIN/view",
-      },
-    },
-    {
-      name: "Age Calculator",
-      group: "personal",
-      category: { en: "Utility App", ar: "تطبيق خدمي" },
-      description: {
-        en: "A simple utility app for calculating age quickly and accurately.",
-        ar: "تطبيق خدمي بسيط لحساب العمر بسرعة ودقة.",
-      },
-      logo: "",
-      gallery: [],
-      links: {
-        video: "https://drive.google.com/file/d/1CcIxwFKE3Z3rGHeA86mLy4Py6abuz-eM/view",
-      },
-    },
-    {
-      name: "IQ Science",
-      group: "personal",
-      category: { en: "Personal Project", ar: "مشروع شخصي" },
-      description: {
-        en: "An educational and science-based quiz style project.",
-        ar: "مشروع تعليمي يعتمد على أسلوب الاختبارات العلمية والمعرفية.",
-      },
-      logo: "",
-      gallery: [],
-      links: {
-        video: "https://drive.google.com/file/d/1HXg7AQf0RLCetlQdrUquwiLu3E3kh6nS/view",
-      },
-    },
-    {
-      name: "Hospital System",
-      group: "personal",
-      category: { en: "Desktop Project", ar: "مشروع ديسكتوب" },
-      description: {
-        en: "A software project focused on hospital workflow and system operations.",
-        ar: "مشروع برمجي يركز على إدارة سير العمل والعمليات داخل النظام الطبي.",
-      },
-      logo: "",
-      gallery: [],
-      links: {
-        video: "https://drive.google.com/file/d/1wnLhnVbfIR8eo0zPv8cfrk0UQ7dUNiXg/view",
-      },
-    },
-    {
       name: "La Vie",
-      group: "educational",
-      category: { en: "Educational Project", ar: "مشروع تعليمي" },
+      group: "learning",
+      category: { en: "Plants", ar: "نباتات" },
       description: {
-        en: "An educational Flutter project built to practice structured app architecture and API integration.",
-        ar: "مشروع Flutter تعليمي للتدرب على هيكلة التطبيقات وربط الـ APIs.",
+        en: "An educational Flutter project built to practice structured app architecture and API integration",
+        ar: "مشروع Flutter تعليمي للتدرب على هيكلة التطبيقات وربط الـ APIs",
       },
-      logo: "",
+      logo: "assets/images/projects/la-vie/logo.png",
       gallery: [],
       links: {
         github: "https://github.com/m0hamed-ahmed/la_vie",
@@ -771,14 +681,14 @@ window.PORTFOLIO_DATA = {
       },
     },
     {
-      name: "Weather App",
-      group: "educational",
-      category: { en: "Educational Project", ar: "مشروع تعليمي" },
+      name: "Weather",
+      group: "learning",
+      category: { en: "Weather", ar: "الطقس" },
       description: {
-        en: "A weather tracking app built as an educational project using Flutter.",
-        ar: "تطبيق لمتابعة الطقس تم تطويره كمشروع تعليمي باستخدام Flutter.",
+        en: "A weather tracking app built as an educational project using Flutter",
+        ar: "تطبيق لمتابعة الطقس تم تطويره كمشروع تعليمي باستخدام Flutter",
       },
-      logo: "",
+      logo: "assets/images/projects/weather/logo.png",
       gallery: [],
       links: {
         github: "https://github.com/m0hamed-ahmed/weather_app",
@@ -786,12 +696,12 @@ window.PORTFOLIO_DATA = {
       },
     },
     {
-      name: "TO-Do App",
-      group: "educational",
-      category: { en: "Educational Project", ar: "مشروع تعليمي" },
+      name: "Todo",
+      group: "learning",
+      category: { en: "Task Management", ar: "إدارة المهام" },
       description: {
-        en: "A task management educational app focused on CRUD flows and local app structure.",
-        ar: "تطبيق تعليمي لإدارة المهام يركز على عمليات CRUD وبنية التطبيق المحلية.",
+        en: "A task management educational app focused on CRUD flows and local app structure",
+        ar: "تطبيق تعليمي لإدارة المهام يركز على عمليات CRUD وبنية التطبيق المحلية",
       },
       logo: "",
       gallery: [],
@@ -801,18 +711,117 @@ window.PORTFOLIO_DATA = {
       },
     },
     {
-      name: "News App",
-      group: "educational",
-      category: { en: "Educational Project", ar: "مشروع تعليمي" },
+      name: "News",
+      group: "learning",
+      category: { en: "News", ar: "أخبار" },
       description: {
-        en: "A Flutter news app built to practice API consumption and presentation patterns.",
-        ar: "تطبيق أخبار باستخدام Flutter للتدرب على استهلاك الـ APIs وأنماط العرض.",
+        en: "A Flutter news app built to practice API consumption and presentation patterns",
+        ar: "تطبيق أخبار باستخدام Flutter للتدرب على استهلاك الـ APIs وأنماط العرض",
       },
       logo: "",
       gallery: [],
       links: {
         github: "https://github.com/m0hamed-ahmed/news_app",
         video: "https://drive.google.com/file/d/1GouWUyctLFSdCggizGny9wCyjPls3yVJ/view",
+      },
+    },
+    {
+      name: "Age Calculator",
+      group: "learning",
+      category: { en: "Utility", ar: "خدمي" },
+      description: {
+        en: "A simple utility app for calculating age quickly and accurately",
+        ar: "تطبيق خدمي بسيط لحساب العمر بسرعة ودقة",
+      },
+      logo: "",
+      gallery: [],
+      links: {
+        video: "https://drive.google.com/file/d/1CcIxwFKE3Z3rGHeA86mLy4Py6abuz-eM/view",
+      },
+    },
+    {
+      name: "IQ Test",
+      group: "learning",
+      category: { en: "IQ", ar: "اختبار الذكاء" },
+      description: {
+        en: "A personal project centered around intelligence and test-based interaction",
+        ar: "مشروع شخصي يركز على اختبارات الذكاء والتفاعل القائم على الأسئلة",
+      },
+      logo: "",
+      gallery: [],
+      links: {
+        video: "https://drive.google.com/file/d/1MpT7w-vjx030ygbXvQ5-2ftLSsrLg0wr/view",
+      },
+    },
+    {
+      name: "XO with Friend",
+      group: "learning",
+      category: { en: "Puzzle", ar: "لغز" },
+      description: {
+        en: "A multiplayer XO game that lets users play with friends online",
+        ar: "لعبة XO متعددة اللاعبين تتيح للمستخدمين اللعب مع الأصدقاء عبر الإنترنت",
+      },
+      logo: "assets/images/projects/xo-with-friend/logo.jpg",
+      gallery: [],
+      links: {
+        android: "https://play.google.com/store/apps/details?id=com.xo.online",
+        video: "https://drive.google.com/file/d/1ZFH34NsBBpFiu7XI_-NOXVOo3FuJlqIN/view",
+      },
+    },
+    {
+      name: "Kids Games",
+      group: "learning",
+      category: { en: "Kids", ar: "أطفال" },
+      description: {
+        en: "A personal game project focused on fun and interactive child-friendly gameplay",
+        ar: "مشروع ألعاب شخصي يركز على تجربة ممتعة وتفاعلية مناسبة للأطفال",
+      },
+      logo: "",
+      gallery: [],
+      links: {
+        video: "https://drive.google.com/file/d/1n7JEuVuXyaIaaoe4lJfO8w3n342yyPu-/view",
+      },
+    },
+    {
+      name: "Write Words",
+      group: "learning",
+      category: { en: "Kids", ar: "أطفال" },
+      description: {
+        en: "An educational project designed to support writing practice and learning activities",
+        ar: "مشروع تعليمي لدعم التدريب على الكتابة والأنشطة التعليمية",
+      },
+      logo: "",
+      gallery: [],
+      links: {
+        video: "https://drive.google.com/file/d/1GeeZhAPfM9y7Q7y-SFXOSrzLcr4r92D1/view",
+      },
+    },
+    {
+      name: "IQ Science",
+      group: "learning",
+      category: { en: "IQ", ar: "اختبار الذكاء" },
+      description: {
+        en: "An educational and science-based quiz style project",
+        ar: "مشروع تعليمي يعتمد على أسلوب الاختبارات العلمية والمعرفية",
+      },
+      logo: "",
+      gallery: [],
+      links: {
+        video: "https://drive.google.com/file/d/1HXg7AQf0RLCetlQdrUquwiLu3E3kh6nS/view",
+      },
+    },
+    {
+      name: "Hospital System",
+      group: "learning",
+      category: { en: "Desktop", ar: "ديسكتوب" },
+      description: {
+        en: "A software project focused on hospital workflow and system operations",
+        ar: "مشروع برمجي يركز على إدارة سير العمل والعمليات داخل النظام الطبي",
+      },
+      logo: "",
+      gallery: [],
+      links: {
+        video: "https://drive.google.com/file/d/1wnLhnVbfIR8eo0zPv8cfrk0UQ7dUNiXg/view",
       },
     },
   ],
@@ -828,12 +837,12 @@ window.PORTFOLIO_DATA = {
             ar: "بكالوريوس علوم الحاسب",
           },
           subtitle: {
-            en: "Faculty of Science, Ain Shams University.",
-            ar: "كلية العلوم، جامعة عين شمس.",
+            en: "Faculty of Science, Ain Shams University",
+            ar: "كلية العلوم، جامعة عين شمس",
           },
           date: {
-            en: "September 2017 - June 2022.",
-            ar: "من سبتمبر 2017 إلى يونيو 2022.",
+            en: "September 2017 - June 2022",
+            ar: "من سبتمبر 2017 إلى يونيو 2022",
           },
           text: {
             en: "",
@@ -850,29 +859,29 @@ window.PORTFOLIO_DATA = {
             ar: "مشروع التخرج",
           },
           text: {
-            en: "Real-Time Face Recognition System.",
-            ar: "نظام التعرف على الوجوه في الوقت الحقيقي.",
+            en: "Real-Time Face Recognition System",
+            ar: "نظام التعرف على الوجوه في الوقت الحقيقي",
           },
           bullets: {
             en: [
-              "Project Idea: Identify authorized people through camera recognition.",
-              "Used Technologies: Python, OpenCV, Dlib Library, TensorFlow, MySQL.",
-              "My Role: Create a database and deal with CRUD operations using Python language.",
+              "Project Idea: Identify authorized people through camera recognition",
+              "Used Technologies: Python, OpenCV, Dlib Library, TensorFlow, MySQL",
+              "My Role: Create a database and deal with CRUD operations using Python language",
             ],
             ar: [
-              "فكرة المشروع: التعرف على الأشخاص المصرح لهم من خلال الكاميرات.",
-              "التقنيات المستخدمة: Python وOpenCV وDlib Library وTensorFlow وMySQL.",
-              "دوري: إنشاء قاعدة البيانات والتعامل مع عمليات CRUD باستخدام لغة Python.",
+              "فكرة المشروع: التعرف على الأشخاص المصرح لهم من خلال الكاميرات",
+              "التقنيات المستخدمة: Python و OpenCV و Dlib Library و TensorFlow و MySQL",
+              "دوري: إنشاء قاعدة البيانات والتعامل مع عمليات CRUD باستخدام لغة Python",
             ],
           },
           links: [
             {
-              label: "GitHub",
+              label: { en: "GitHub", ar: "جيت هب" },
               href: "https://github.com/m0hamed-ahmed/Realtime-Face-Recognition-System--DYMOO",
               type: "github",
             },
             {
-              label: "Video",
+              label: { en: "Video", ar: "فيديو" },
               href: "https://drive.google.com/file/d/1qGMPIqTstFeXVmJN7jbHHfH4zSz1L_Vg/view",
               type: "video",
             },
@@ -887,15 +896,15 @@ window.PORTFOLIO_DATA = {
         {
           title: {
             en: "Flutter Hackathon",
-            ar: "Flutter Hackathon",
+            ar: "هاكاثون Flutter",
           },
           subtitle: {
             en: "Orange Digital Center Egypt",
             ar: "Orange Digital Center Egypt",
           },
           date: {
-            en: "August 2022.",
-            ar: "أغسطس 2022.",
+            en: "August 2022",
+            ar: "أغسطس 2022",
           },
           text: {
             en: "",
@@ -905,15 +914,15 @@ window.PORTFOLIO_DATA = {
         {
           title: {
             en: "Flutter Internship",
-            ar: "Flutter Internship",
+            ar: "تدريب Flutter",
           },
           subtitle: {
             en: "Algoriza Company",
-            ar: "Algoriza Company",
+            ar: "شركة Algoriza",
           },
           date: {
-            en: "June 2022 - September 2022.",
-            ar: "من يونيو 2022 إلى سبتمبر 2022.",
+            en: "June 2022 - September 2022",
+            ar: "من يونيو 2022 إلى سبتمبر 2022",
           },
           text: {
             en: "",
@@ -921,7 +930,7 @@ window.PORTFOLIO_DATA = {
           },
           links: [
             {
-              label: "Certificate",
+              label: { en: "Certificate", ar: "شهادة" },
               href: "https://drive.google.com/file/d/1Br1wg3QfhQ3O4LQaWauRDFeC5F692HXq/view?usp=sharing",
               type: "certificate",
             },
@@ -936,15 +945,15 @@ window.PORTFOLIO_DATA = {
         {
           title: { en: "Arabic", ar: "العربية" },
           text: {
-            en: "Excellent (Mother Tongue).",
-            ar: "ممتازة (اللغة الأم).",
+            en: "Excellent (Mother Tongue)",
+            ar: "ممتازة (اللغة الأم)",
           },
         },
         {
           title: { en: "English", ar: "الإنجليزية" },
           text: {
-            en: "Good.",
-            ar: "جيدة.",
+            en: "Good",
+            ar: "جيدة",
           },
         },
       ],
